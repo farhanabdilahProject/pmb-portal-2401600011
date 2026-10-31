@@ -15,6 +15,8 @@ def beranda():
     jumlah_permintaan += 1
     commit = os.environ.get("VERCEL_GIT_COMMIT_SHA", "lokal")[:7]
     return jsonify(
+        nama="Farhan Abdilah",
+        nim="2401600011",
         layanan="Portal PMB Universitas Teknologi Muhammadiyah",
         versi=os.environ.get("APP_VERSION", "v1"),
         gelombang=os.environ.get("PMB_GELOMBANG", "belum diatur"),
